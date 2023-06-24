@@ -1,0 +1,31 @@
+@media screen and (orientation: portrait) {
+    .table-user table td span.text-overflow {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 120px !important;
+    }
+    .table-control-mapel table thead tr th.cell {
+        font-size: 14px !important;
+    }
+    .table-control-mapel table {
+        overflow-x: scroll;
+    }
+    .table-control-materi table {
+        overflow-x: scroll;
+    }
+    .table-control-mapel td span.text-overflow {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 217px !important;
+    }
+    .table-control-materi table thead tr th.cell {
+        font-size: 14px !important;
+    }
+    select option {
+        font-size: 10px;
+    }
+}

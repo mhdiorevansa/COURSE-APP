@@ -1,0 +1,1238 @@
+:root {
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+    --blue: #19a7ce;
+    --font-grotesk: "Space Grotesk", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --dark: #212121;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+nav {
+    font-family: "Space Grotesk", sans-serif;
+}
+ol {
+    list-style-type: decimal;
+}
+li {
+    display: list-item;
+}
+nav.navbar {
+    background-color: #ffffff !important;
+}
+a.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: #19a7ce;
+}
+a.navbar-brand:hover {
+    color: #19a7ce;
+}
+li.nav-item a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+}
+a.btn-register {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #19a7ce;
+    border: 1px solid #19a7ce;
+}
+a.btn-register:hover {
+    color: #19a7ce;
+    border: 1px solid #19a7ce;
+}
+a.btn-login {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #19a7ce;
+}
+a.btn-login:hover {
+    color: #ffffff;
+    background-color: #19a7ce;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    max-height: 490px;
+    width: 100vw;
+    background-position: center;
+    object-fit: cover;
+}
+.hero:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 99.5vw;
+    max-height: 546px;
+    background: #3a3a3aa8;
+}
+.hero h3.hero-heading {
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 80px;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    margin-top: 59px !important;
+}
+.hero h3 span.brand-title {
+    color: #19a7ce;
+}
+.hero p.hero-title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 39px;
+}
+a.button-color {
+    background-color: #19a7ce;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Space Grotesk", sans-serif;
+}
+a.button-color:hover {
+    background-color: #19a7ce;
+    color: white;
+}
+.superiority .superiority-heading h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 60px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #19a7ce;
+    margin-bottom: 30px !important;
+}
+.superiority-item h5.card-title {
+    color: #19a7ce;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 3.336vw;
+    font-family: "Space Grotesk", sans-serif;
+}
+.superiority .card-body p.card-text {
+    font-family: "Inter", sans-serif;
+    font-size: 17.98px;
+    line-height: 26.97px;
+    color: #212121;
+}
+.bg-course-list {
+    background-color: #f1fbfd;
+}
+.course-list {
+    max-width: 1400px;
+}
+.course-list .course-list-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--font-grotesk);
+    color: var(--blue);
+}
+.course-list .course-list-header a {
+    font-size: 17px;
+    font-family: var(--font-inter);
+    color: var(--dark);
+    text-decoration: none;
+}
+.course-list .cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.course-list .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+/* .course-list .card:hover {
+  transform: scale(1);
+  z-index: 9999;
+} */
+.bg-img-html {
+    background-color: #fef5f1;
+}
+.bg-img-css {
+    background-color: #f2fafd;
+}
+.bg-img-js {
+    background-color: #fefdf0;
+}
+.bg-img-php {
+    background-color: #f7f0fe;
+}
+.bg-img-github {
+    background-color: #f3f7fb;
+}
+.bg-img-figma {
+    background-color: #f6f0ff;
+}
+.bg-img-java {
+    background-color: #fff7f0;
+}
+.course-list .card .card-img img {
+    width: 177px;
+    height: 177px;
+}
+.course-list .card:not(:last-child) {
+    margin-right: 10px;
+}
+.course-list .card .card-content {
+    margin: 20px 0;
+    max-width: 96.8%;
+}
+.course-list .card .card-content h3 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 41px;
+}
+.course-list .card .card-link-wrapper {
+    margin-top: auto;
+}
+.course-list .card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-grotesk);
+    font-size: 19px;
+    color: white;
+    background-color: var(--blue);
+    padding: 9px 27px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.information-description {
+    margin-left: 60px !important;
+}
+.information .information-description h3 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 41px;
+    line-height: 50px;
+}
+.information .information-description p {
+    font-family: var(--font-inter);
+    color: var(--dark);
+    font-weight: 400;
+    font-size: 21px;
+}
+.information a {
+    font-family: var(--font-grotesk);
+    font-size: 21px;
+}
+.information a.btn-information {
+    background-color: var(--blue);
+    color: white;
+}
+.information .banner-information img {
+    max-width: 342px;
+    min-height: 400px;
+    position: relative;
+    left: 37px;
+}
+.testimonials {
+    max-width: 1400px;
+}
+.testimonials h3 {
+    font-family: var(--font-inter);
+    color: var(--blue);
+    font-size: 41px;
+    font-weight: 600;
+}
+.testimonials .cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonials .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px 20px 0px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+.testimonials .card:not(:last-child) {
+    margin-right: 10px;
+}
+.testimonials .card .card-title {
+    font-size: 20px;
+}
+.testimonials .card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+}
+.testimonials .card .card-link-wrapper {
+    margin-top: auto;
+}
+.testimonials .card-content {
+    min-width: 100%;
+}
+.testimonials .card-content p {
+    font-size: 18px;
+}
+.testimonials .card-profile h3 {
+    font-size: 23px !important;
+    font-weight: 600;
+    color: var(--dark);
+}
+.testimonials .card-profile img {
+    border-radius: 50%;
+    width: 94px;
+    height: 94px;
+}
+.call-to-action {
+    padding: 140px 0px 140px 0px;
+}
+.call-to-action h3 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--blue);
+}
+.call-to-action a {
+    font-size: 21px;
+    background-color: var(--blue);
+    font-family: var(--font-grotesk);
+}
+.login,
+.register {
+    min-height: 99vh;
+}
+.login-card,
+.register-card {
+    border: 1px solid #21212121;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+}
+.login-card h3,
+.register-card h3 {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    color: #19a7ce;
+}
+.login-card form label,
+.register-card form label {
+    color: #212121;
+}
+.login-card form button.btn-login,
+.register-card form button.btn-login {
+    background-color: var(--blue);
+}
+.login-card form p,
+.register-card form p {
+    color: #212121;
+}
+.login-card form a,
+.register-card form a {
+    color: #19a7ce;
+}
+
+footer ul li.nav-item a {
+    font-family: var(--font-grotesk);
+}
+button.button-profile-lp {
+    border: none;
+}
+img.photo-profile-lp {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+ul.navbar-lp li a:hover {
+    color: #19a7ce;
+}
+ul.navbar-lp li a:active {
+    color: #19a7ce;
+}
+.mapel-detail {
+    background-color: #f4f4f4;
+}
+.right-img-mapel img {
+    width: 210px;
+    height: 210px;
+}
+.mapel-detail .left-description-mapel h1 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    font-size: 61px;
+    color: #19a7ce;
+    line-height: 81.66px;
+}
+.mapel-detail .left-description-mapel p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    color: #212121;
+}
+.mapel-detail .left-description-mapel a {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-grotesk);
+    background-color: #19a7ce;
+    color: white;
+}
+.mapel-detail .left-description-mapel h5 {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: var(--font-grotesk);
+    color: #fa3a3a;
+}
+.clear {
+    clear: left;
+}
+.tentang-kelas,
+.materi-kelas {
+    border: 1.5px solid #606060;
+}
+.tentang-kelas h1,
+.materi-kelas h1 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    color: #19a7ce;
+    font-size: 35px;
+}
+.materi-kelas .sub-materi a {
+    color: #212121;
+    text-decoration: none;
+}
+.materi-kelas .sub-materi a:visited,
+.materi-kelas .sub-materi a:active {
+    color: #212121;
+    text-decoration: none;
+}
+.tentang-kelas p,
+.tentang-kelas ul li {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #212121;
+}
+.sub-materi {
+    background-color: #eeeeee;
+}
+.sub-materi h3 {
+    font-size: 23px;
+    font-weight: 500px;
+    font-family: var(--font-inter);
+}
+.persiapan-kelas {
+    border: 1.5px solid #606060;
+}
+.persiapan-kelas h1 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    color: #19a7ce;
+    font-size: 35px;
+}
+.persiapan-kelas p,
+.persiapan-kelas ul li {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: #212121;
+}
+.rekomendasi h1 {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    color: #19a7ce;
+    font-size: 35px;
+}
+.bg-out-detailkelas {
+    background-color: #f4f4f4;
+}
+.bg-out-detailkelas .detail-kelas-again {
+    background-color: #ffffff;
+}
+.bg-out-detailkelas .detail-kelas h1 {
+    color: #19a7ce;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 60px;
+    font-family: var(--font-grotesk);
+}
+.bg-out-detailkelas .detail-kelas p {
+    color: #212121;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-inter);
+    line-height: 35px;
+    text-align: justify;
+}
+.box-code .box-header {
+    background-color: #19a7ce;
+}
+.bg-out-detailkelas .detail-kelas ol li {
+    color: #212121;
+    font-size: 20px;
+    font-family: var(--font-inter);
+    line-height: 35px;
+}
+.next-materi a {
+    font-family: var(--font-grotesk);
+    font-size: 20px;
+}
+.cover-page-belajar {
+    background-color: #f4f4f4;
+    padding: 73px 0 73px 0;
+}
+.cover-page-belajar h1 {
+    font-size: 43px !important;
+    font-weight: 600;
+    color: #19a7ce;
+    line-height: 58px;
+}
+.cover-page-belajar a {
+    font-size: 20px;
+}
+.all-course-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #19a7ce;
+}
+.all-course .card-body h3 {
+    line-height: 41px;
+}
+.forum-header {
+    background-color: #f4f4f4;
+}
+.forum-header h1 {
+    font-size: 43px !important;
+    font-weight: 600;
+    color: #19a7ce;
+    line-height: 58px;
+}
+.forum-header img {
+    position: relative;
+    top: -60px;
+}
+.main-forum .search-box .input-group {
+    border: 1px solid #19a7ce !important;
+}
+.main-forum .search-box form input[type="search"] {
+    width: 800px;
+    border: 0px solid transparent !important;
+}
+.main-forum .search-box form input[type="search"]:focus {
+    box-shadow: 0 0 0 transparent !important;
+}
+.main-forum .search-box form span.icon-search {
+    border: none !important;
+    background-color: white;
+}
+.main-forum .search-box form span.icon-search button[type="submit"] {
+    border: 0px solid transparent !important;
+    background-color: transparent !important;
+}
+.main-forum .search-box form span.icon-search i {
+    color: #19a7ce !important;
+    font-size: 20px !important;
+}
+.main-forum .question .card {
+    background-color: #f6fcfe;
+}
+.main-forum .filter-add h3 {
+    font-size: 41px;
+    font-weight: 600;
+    font-family: var(--font-grotesk);
+    color: #616161;
+}
+.filter-add .add-question a {
+    font-family: var(--font-grotesk);
+    font-size: 16px;
+    background-color: #19a7ce;
+    color: white;
+}
+.question {
+    margin-top: -11px !important;
+}
+.question .card .card-body h3 a {
+    font-family: var(--font-grotesk);
+    color: #19a7ce;
+    text-decoration: none;
+}
+.question .card .card-body p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+}
+.question .card .card-body .info-question ul li {
+    list-style: none;
+}
+.make-question h1 {
+    font-size: 41px;
+    font-weight: 600;
+    font-family: var(--font-grotesk);
+    color: #19a7ce;
+}
+.make-question form button.button-add {
+    background-color: #19a7ce !important;
+    color: white;
+}
+.make-question form a.btn-cancel {
+    border: 1px solid #8e8e8e;
+    font-family: var(--font-grotesk);
+    font-weight: 400;
+    font-size: 17px;
+    color: #8e8e8e;
+}
+.make-question form button {
+    font-family: var(--font-grotesk);
+    font-weight: 400;
+    font-size: 17px;
+}
+.code-testing h2 {
+    font-family: var(--font-grotesk);
+    color: #19a7ce;
+    margin-top: 13px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.code-editor {
+    display: flex;
+    margin-left: 1.8em !important;
+    margin-bottom: 15em;
+}
+.code-editor .left,
+.code-editor .right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+.code-editor textarea {
+    width: 100%;
+    height: 40%;
+    background-color: #f6fcfe;
+    padding: 10px 20px;
+    border: 1px solid #616161;
+    outline: 0;
+}
+.code-editor .right iframe {
+    width: 100%;
+    height: 146%;
+    position: relative;
+    top: 0.5em;
+    background: #f6fcfe;
+    border: 1px solid #616161;
+    outline: 0;
+}
+.filter select option {
+    font-family: var(--font-inter);
+}
+.filter button {
+    background-color: #19a7ce;
+    color: white;
+}
+.filter button:hover {
+    background-color: #19a7ce;
+    color: white;
+}
+.filter select {
+    font-size: 16px !important;
+    width: 121px !important;
+    border: 1px solid #212121 !important;
+}
+.filter select.form-select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.filter select option {
+    font-size: 15px !important;
+}
+.question-detail-header h3 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--font-grotesk);
+    color: #19a7ce;
+}
+.bg-detail-question {
+    background-color: #f6fcfe;
+}
+.question-detail-header p {
+    font-family: var(--font-inter);
+    color: #212121;
+}
+.main-question .main-question-header h5 {
+    color: #19a7ce;
+}
+.main-question .index-question p {
+    margin-left: 4.2em !important;
+}
+.main-question .index-question a {
+    text-decoration: none;
+    color: #616161;
+    background-color: transparent;
+    border: 0px;
+    font-family: var(--font-inter);
+}
+.answer-question .jawab button {
+    background-color: #19a7ce !important;
+    font-family: var(--font-grotesk);
+    color: white;
+    font-size: 17px;
+}
+form.textarea textarea {
+    width: 120%;
+}
+.ranking-header {
+    background-color: #19a7ce;
+}
+.ranking-header h3 {
+    font-family: var(--font-grotesk);
+    color: white;
+    font-weight: 600;
+    font-size: 45px;
+}
+.top-3 {
+    padding-right: 11em;
+    padding-left: 11em;
+    margin-left: 9.8rem;
+}
+.top-3 .info {
+    position: relative;
+    top: -4em;
+}
+.top-3 h3 {
+    font-family: var(--font-inter);
+    font-size: 38px;
+    font-weight: 600;
+}
+.top-3 p {
+    width: 160px !important;
+    background-color: #ffad08;
+    font-family: var(--font-inter);
+    font-size: 20px;
+    color: white;
+}
+.left-info-rank p {
+    width: 160px !important;
+    background-color: #ffad08;
+    font-family: var(--font-inter);
+    font-size: 15px;
+    color: white;
+}
+.top-3 span img {
+    position: relative;
+    left: 5em;
+    top: -5em;
+}
+.bg-rankafter {
+    background-color: #eeeeee;
+}
+.bg-rankafter h4 {
+    font-family: var(--font-inter);
+}
+.quiz {
+    background-color: #eeeeee !important;
+    min-height: 87vh;
+}
+.quiz .card .card-body h2 {
+    font-size: 40px;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    color: #19a7ce;
+}
+.quiz .card .card-body h3 {
+    font-size: 27px;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    color: #19a7ce;
+}
+.quiz .card .card-body p {
+    font-family: var(--font-inter);
+    color: #212121;
+    font-weight: 400;
+    line-height: 27px;
+}
+.quiz .card .card-body a {
+    background-color: #19a7ce;
+    font-family: var(--font-inter);
+    border: none !important;
+}
+.quiz .card .card-body button {
+    background-color: #19a7ce;
+    font-family: var(--font-inter);
+    border: none !important;
+}
+.quiz .card .card-body a:visited {
+    background-color: #19a7ce;
+    border: none !important;
+}
+.next i {
+    display: none;
+}
+@media screen and (orientation: portrait) {
+    .filter select {
+        font-size: 10px;
+    }
+    .filter select option {
+        font-size: 10px !important;
+    }
+    .hero img {
+        height: 233px;
+    }
+    .hero a {
+        font-size: 13px;
+    }
+    .hero h3.hero-heading {
+        margin-top: 25px !important;
+        font-size: 19px;
+        margin-bottom: 10px;
+        line-height: 29px;
+    }
+    .hero p.hero-title {
+        font-size: 13.6px !important;
+        line-height: 20px !important;
+        font-weight: 300;
+    }
+    .superiority .superiority-heading h3 {
+        font-size: 27px;
+        margin-bottom: 25px !important;
+    }
+    .superiority h5.card-title {
+        font-size: 22px !important;
+        margin-bottom: 11px !important;
+    }
+    .superiority p.card-text {
+        font-size: 16px;
+    }
+    .course-list-header h2 {
+        font-size: 24px !important;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .course-list-header a {
+        position: relative;
+        top: 10px;
+    }
+    .course-list .cards {
+        margin-bottom: 30px;
+        padding-bottom: 52px !important;
+    }
+    .course-list li.card .card-img img {
+        width: 120px;
+        height: 120px;
+    }
+    .course-list .card .card-content {
+        max-width: 100%;
+    }
+    .course-list .card .card-content h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .course-list .card .card-link {
+        font-size: 15px;
+        margin-top: -4px;
+    }
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+    .information-description {
+        order: 2;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 13px !important;
+    }
+    .information-description h3 {
+        font-size: 24px !important;
+        line-height: 30px !important;
+        font-weight: 600;
+        text-align: center;
+    }
+    .information-description p {
+        text-align: center;
+        font-size: 17px !important;
+        margin-top: 12px;
+    }
+    .banner-information img {
+        min-width: 300px !important;
+        max-height: 400px !important;
+    }
+    .information a.btn-information {
+        font-size: 18px;
+    }
+    .testimonials h3 {
+        font-size: 23px;
+        line-height: 30px !important;
+    }
+    .testimonials .card .card-profile h3 {
+        font-size: 17px !important;
+    }
+    .testimonials .card .card-profile img {
+        width: 80px;
+        height: 80px;
+    }
+    .testimonials .card .card-content p {
+        font-size: 14px;
+    }
+    .call-to-action {
+        padding: 56px 0 56px 0;
+    }
+    .call-to-action h3 {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .call-to-action a {
+        font-size: 18px;
+    }
+    button.button-profile-lp {
+        border: none;
+    }
+    button.button-profile-lp img.photo-profile-lp {
+        margin-left: -38px;
+    }
+    button.button-profile-lp .name-user {
+        display: none !important;
+    }
+    .mapel-detail .left-description-mapel h1 {
+        font-size: 32px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .mapel-detail .left-description-mapel p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .detail-mapel-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detail-mapel-info a {
+        order: 2;
+        align-self: center;
+    }
+    .right-img-mapel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+        margin-left: 10px !important;
+        margin-bottom: 25px;
+    }
+    .right-img-mapel img {
+        margin-top: 1%;
+        position: relative;
+        top: 13px;
+    }
+    .tentang-kelas h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .tentang-kelas p {
+        text-align: center;
+        font-size: 18px;
+    }
+    .tentang-kelas ul li {
+        font-size: 18px;
+    }
+    .materi-kelas h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .sub-materi h3 {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 13px;
+    }
+    .persiapan-kelas h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .persiapan-kelas p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .persiapan-kelas ul li {
+        font-size: 18px;
+    }
+    .rekomendasi .course-list-header h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+    .detail-kelas-again {
+        padding: 15px 15px !important;
+        margin-top: 2.5rem;
+    }
+    .detail-kelas h1 {
+        font-size: 30px !important;
+        line-height: 48px !important;
+    }
+    .detail-kelas p {
+        font-size: 18px !important;
+        text-align: justify !important;
+    }
+    .detail-kelas ol li {
+        font-size: 18px !important;
+    }
+    .box-code img {
+        width: 100%;
+        max-height: 290px;
+    }
+    .next-materi {
+        margin-bottom: 26px !important;
+        margin-top: 30px !important;
+    }
+    .next-materi a {
+        font-size: 14px;
+    }
+
+    .cover-page-belajar {
+        padding: 20px 20px 67px 20px !important;
+    }
+    .cover-page-belajar h1 {
+        font-size: 25px !important;
+        text-align: center;
+        line-height: 40px;
+    }
+    .cover-page-belajar a {
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    .cover-page-belajar img {
+        width: 274px;
+        height: 126px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+    .all-course-header h2 {
+        font-size: 25px !important;
+        line-height: 40px;
+        text-align: center;
+    }
+    .all-course .card .card-header img {
+        width: 120px;
+        height: 120px;
+    }
+    .all-course .card-body h3 {
+        line-height: 35px;
+        margin-bottom: 13px;
+    }
+    .forum-header h1 {
+        font-size: 24px !important;
+        text-align: center;
+        line-height: 38px;
+        text-align: center;
+        margin-top: 12px;
+        position: relative;
+        z-index: 1;
+    }
+    .forum-header img {
+        width: 274px;
+        height: 201px;
+        position: relative;
+        left: 50px;
+        top: -20px;
+    }
+    .main-forum .search-box form input[type="search"] {
+        width: 260px;
+        border: 0px solid transparent !important;
+    }
+    .main-forum .filter-add {
+        margin-top: -20px;
+    }
+    .main-forum .filter-add h3 {
+        font-size: 25px;
+    }
+    .main-forum .question {
+        margin-top: 0px !important;
+    }
+    .main-forum .question .card .card-body .info-question {
+        margin-top: -5px;
+    }
+    .main-forum .question .card .card-body .info-question ul li {
+        margin-bottom: 13px;
+    }
+    .main-forum .question .card .card-body h3 {
+        line-height: 33px;
+    }
+    .main-forum .question .card .card-body p {
+        line-height: 28px;
+    }
+    .pagination {
+        position: relative;
+        left: -19px;
+    }
+    .make-question {
+        margin: 15px 3px 0 3px !important;
+    }
+    .make-question h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .make-question form select option {
+        font-size: 10px;
+    }
+    .make-question form a.btn-cancel,
+    .make-question form button {
+        font-size: 14px;
+    }
+    .code-editor {
+        margin-left: 0px !important;
+    }
+    .code-testing h2 {
+        font-size: 31px !important;
+    }
+    .question-detail-header h3 {
+        font-size: 23px !important;
+    }
+    .top-3 img {
+        width: 71px;
+        height: 71px;
+    }
+    .top-3 span img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 33px;
+        top: -35px;
+    }
+    .top-3 {
+        /* position: relative;
+        left: 7em; */
+        margin-left: 0.9rem;
+        gap: 34px;
+        margin-top: -30px;
+    }
+    .top-3 .info {
+        margin-top: 37px;
+        margin-bottom: -21px;
+    }
+    .top-3 .info h3 {
+        font-size: 17px;
+    }
+    .top-3 .info p {
+        font-size: 14px;
+        width: 90px !important;
+    }
+    .point {
+        left: 7em;
+        bottom: 0.4em;
+        position: relative;
+    }
+    .point p {
+        width: 90px !important;
+    }
+    .next i {
+        display: inline-block;
+    }
+    .next span {
+        display: none;
+    }
+}
+@media (min-width: 360px) {
+    .top-3 {
+        position: relative;
+        left: -11.4em;
+        /* margin-left: -10.6rem; */
+    }
+}
+@media (min-width: 390px) {
+    .top-3 {
+        position: relative;
+        left: -10.3rem;
+    }
+}
+@media (min-width: 412px) {
+    .top-3 {
+        position: relative;
+        left: -9.6rem;
+    }
+}
+@media (min-width: 500px) {
+    .course-list .card {
+        flex-basis: calc(50% - 10px);
+    }
+    .course-list .card:not(:last-child) {
+        margin-right: 20px;
+    }
+    .card {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+@media (min-width: 700px) {
+    .course-list .card {
+        flex-basis: calc(calc(100% / 3) - 20px);
+    }
+
+    .course-list .card:not(:last-child) {
+        margin-right: 30px;
+    }
+    .testimonials .card {
+        flex-basis: calc(calc(100% / 3) - 20px);
+    }
+
+    .testimonials .card:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+@media (min-width: 1100px) {
+    .course-list .card {
+        flex-basis: calc(25% - 30px);
+    }
+
+    .course-list .card:not(:last-child) {
+        margin-right: 40px;
+    }
+    .testimonials .card {
+        flex-basis: calc(25% - 30px);
+    }
+
+    .testimonials .card:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 92px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--thumb);
+    border-radius: 92px;
+}
